@@ -336,5 +336,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     
-    console.log('✅ Onsunplay Solar - All Features Loaded!');
+    console.log('Onsunplay Solar - All Features Loaded!');
 });
