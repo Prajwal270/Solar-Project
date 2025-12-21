@@ -3,9 +3,816 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | On Sun Pay Solar</title>
+    <title>OnSunPay Solar - Clean Energy Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/home.css">
+    <link rel="stylesheet" href="../assets/responsive.css">
 </head>
 <body>
+    <!-- Navigation Section -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <a href="home.html" class="logo">
+                    <img src="../images/favicon.png" alt="OnSunPay Solar Icon" class="logo-icon">
+                    <div class="logo-text">
+                        <span class="logo-primary">ON SUN PAY</span>
+                        <span class="logo-secondary">SOLAR</span>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Navigation Menu -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resources.html" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="work.html" class="nav-link">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
     
+    <!-- Hero Section with Image Slider -->
+    <section class="hero-section">
+        <!-- Background Image Slider -->
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('../images/solars.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('../images/solar2.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('../images/windmill.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=1920&q=80');"></div>
+        </div>
+        
+        <!-- Hero Overlay -->
+        <div class="hero-overlay"></div>
+        
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1 class="hero-title">Powering the Intelligence of Tomorrow - Always Clean, Always On</h1>
+            <p class="hero-subtitle">As the world grows smarter, its energy must grow cleaner. On Sun Pay Solar delivers innovative solar solutions for a sustainable future with Round the Clock Clean Energy.</p>
+            
+            <!-- Hero Buttons -->
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Choose Your Right Solar Solution</button>
+                <button class="btn btn-secondary">Power Your Career, Join us</button>
+            </div>
+        </div>
+        
+        <!-- Slider Navigation Dots -->
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <!-- Left Side - Overlapping Images with Natural Elements -->
+            <div class="about-images-wrapper">
+                <!-- Realistic Leaves Animation -->
+                <svg class="floating-leaf leaf-1" width="80" height="80" viewBox="0 0 200 200">
+                    <path d="M100,20 Q150,50 160,100 Q150,150 100,180 Q50,150 40,100 Q50,50 100,20" 
+                          fill="#7cb342" opacity="0.6"/>
+                    <path d="M100,20 L100,180" stroke="#558b2f" stroke-width="3" fill="none"/>
+                </svg>
+                
+                <svg class="floating-leaf leaf-2" width="60" height="60" viewBox="0 0 200 200">
+                    <path d="M100,20 Q150,50 160,100 Q150,150 100,180 Q50,150 40,100 Q50,50 100,20" 
+                          fill="#8bc34a" opacity="0.7"/>
+                    <path d="M100,20 L100,180" stroke="#689f38" stroke-width="3" fill="none"/>
+                </svg>
+                
+                <svg class="floating-leaf leaf-3" width="70" height="70" viewBox="0 0 200 200">
+                    <path d="M100,20 Q150,50 160,100 Q150,150 100,180 Q50,150 40,100 Q50,50 100,20" 
+                          fill="#9ccc65" opacity="0.5"/>
+                    <path d="M100,20 L100,180" stroke="#7cb342" stroke-width="3" fill="none"/>
+                </svg>
+                
+                <!-- Overlapping Polaroid-Style Images -->
+                <div class="images-stack">
+                    <!-- Main Center Image -->
+                    <div class="image-box image-main">
+                        <div class="polaroid-frame">
+                            <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=85" alt="Solar Panels Installation">
+                        </div>
+                    </div>
+                    
+                    <!-- Top Right Rotated Image -->
+                    <div class="image-box image-top-right">
+                        <div class="polaroid-frame">
+                            <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=600&q=85" alt="Wind Turbine Field">
+                        </div>
+                    </div>
+                    
+                    <!-- Bottom Left Rotated Image -->
+                    <div class="image-box image-bottom-left">
+                        <div class="polaroid-frame">
+                            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=85" alt="Renewable Energy Plant">
+                        </div>
+                    </div>
+                    
+                    <!-- Top Left Small Image -->
+                    <div class="image-box image-top-left">
+                        <div class="polaroid-frame">
+                            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=500&q=85" alt="Solar Farm">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Decorative Green Circle -->
+                <div class="green-circle"></div>
+            </div>
+            
+            <!-- Right Side - Content -->
+            <div class="about-content">
+                <span class="section-label">ABOUT US</span>
+                <h2 class="section-title">Unlocking Nature's Potential for a Sustainable Tomorrow</h2>
+                <p class="section-description">
+                    Indian culture has always revered the 'Panchtaivas' which include wind, water, earth, fire, 
+                    and the sky. We firmly believe in nature's abundant potential and its paramount role in 
+                    sustenance of life forms on the planet. Deriving our inspiration from forces of nature, 
+                    On Sun Pay Solar's business channelises these sources for powering human development.
+                </p>
+                <button class="btn-learn-more">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <svg width="45" height="45" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Plant leaves on top -->
+                        <path d="M45 20C45 15 48 12 50 12C52 12 55 15 55 20C55 25 52 28 50 28C48 28 45 25 45 20Z" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <path d="M38 22C38 18 40 15 42 15C44 15 46 18 46 22C46 26 44 29 42 29C40 29 38 26 38 22Z" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <path d="M54 22C54 18 56 15 58 15C60 15 62 18 62 22C62 26 60 29 58 29C56 29 54 26 54 22Z" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <!-- Bulb circle -->
+                        <circle cx="50" cy="50" r="23" stroke="currentColor" stroke-width="3.5"/>
+                        <!-- Stem inside bulb -->
+                        <line x1="50" y1="28" x2="50" y2="65" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M45 40C45 40 47 43 50 43C53 43 55 40 55 40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        <!-- Bulb base -->
+                        <rect x="42" y="73" width="16" height="4" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <rect x="44" y="77" width="12" height="3" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <rect x="45" y="80" width="10" height="5" stroke="currentColor" stroke-width="3" fill="none" rx="1"/>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <div class="stat-number-wrapper">
+                        <h3 class="stat-number" data-target="100">0</h3>
+                        <span class="stat-plus">+</span>
+                    </div>
+                    <p class="stat-label">Projects</p>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <svg width="45" height="45" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Cloud -->
+                        <path d="M30 45C30 38 35 33 41 33C42 33 43 33 44 33.5C45 28 49.5 24 55 24C61 24 66 29 66 35C66 35.5 66 36 66 36.5C70 37.5 73 41 73 45.5C73 51 68.5 55.5 63 55.5H35C31 55.5 27.5 52 27.5 47.5C27.5 45 28.5 43 30 41.5" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- Connection lines -->
+                        <line x1="40" y1="55.5" x2="40" y2="68" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="50" y1="55.5" x2="50" y2="68" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="60" y1="55.5" x2="60" y2="68" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <!-- Bottom circles (nodes) -->
+                        <circle cx="33" cy="80" r="5" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <circle cx="50" cy="75" r="5" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <circle cx="67" cy="80" r="5" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <line x1="40" y1="68" x2="33" y2="75" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="60" y1="68" x2="67" y2="75" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <div class="stat-number-wrapper">
+                        <h3 class="stat-number" data-target="6">0</h3>
+                        <span class="stat-unit"> GWp</span>
+                    </div>
+                    <p class="stat-label">Installed Capacity</p>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <svg width="45" height="45" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Plant leaves on top -->
+                        <path d="M43 20C43 16 45 13 47 13C49 13 51 16 51 20C51 24 49 27 47 27C45 27 43 24 43 20Z" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                        <path d="M51 20C51 16 53 13 55 13C57 13 59 16 59 20C59 24 57 27 55 27C53 27 51 24 51 20Z" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                        <!-- Stem -->
+                        <line x1="51" y1="27" x2="51" y2="38" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        <!-- Earth/Globe circle -->
+                        <circle cx="51" cy="58" r="28" stroke="currentColor" stroke-width="3.5"/>
+                        <!-- Continents/cracks -->
+                        <path d="M30 50C32 48 35 47 37 48C39 49 40 52 38 54C36 56 33 56 31 54" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M45 65C47 63 50 62 52 63C54 64 55 67 53 69C51 71 48 71 46 69" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M60 52C62 50 65 49 67 50C69 51 70 54 68 56C66 58 63 58 61 56" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M40 72C38 70 38 67 40 65C42 63 45 64 46 66" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        <path d="M65 68C63 66 63 63 65 61C67 59 70 60 71 62" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <div class="stat-number-wrapper">
+                        <h3 class="stat-number" data-target="26">0</h3>
+                        <span class="stat-decimal">.7</span>
+                        <span class="stat-unit"> MMT</span>
+                    </div>
+                    <p class="stat-label">Co2 Mitigation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainable Solutions Section -->
+    <section class="sustainable-section">
+        <div class="sustainable-container">
+            <div class="sustainable-content">
+                <p class="sustainable-label">SUSTAINABLE SOLUTIONS FOR GREENER FUTURE</p>
+                <h2 class="sustainable-title">Illuminating the planet using energy derived from sources that naturally replenish over time</h2>
+                
+                <div class="sustainable-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <span class="feature-text">Renewable Energy</span>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="6" width="18" height="12" rx="1" stroke="currentColor" stroke-width="2"/>
+                                <rect x="6" y="9" width="4" height="6" fill="currentColor"/>
+                                <rect x="11" y="9" width="4" height="6" fill="currentColor"/>
+                                <line x1="8" y1="3" x2="8" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="16" y1="3" x2="16" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="feature-text">Solar PV Manufacturing</span>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 12h4l3 9 4-18 3 9h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span class="feature-text">Green Fuels</span>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="5" y="4" width="14" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M9 12h6M12 9v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="9" y1="4" x2="9" y2="2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="15" y1="4" x2="15" y2="2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="feature-text">Energy Storage Solutions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="services-container">
+            <!-- Floating Leaves Animation -->
+            <svg class="floating-leaf leaf-1" width="80" height="80" viewBox="0 0 200 200">
+                <path d="M100,20 Q150,50 160,100 Q150,150 100,180 Q50,150 40,100 Q50,50 100,20" 
+                      fill="#7cb342" opacity="0.6"/>
+                <path d="M100,20 L100,180" stroke="#558b2f" stroke-width="3" fill="none"/>
+            </svg>
+            
+            <svg class="floating-leaf leaf-2" width="60" height="60" viewBox="0 0 200 200">
+                <path d="M100,20 Q150,50 160,100 Q150,150 100,180 Q50,150 40,100 Q50,50 100,20" 
+                      fill="#8bc34a" opacity="0.7"/>
+                <path d="M100,20 L100,180" stroke="#689f38" stroke-width="3" fill="none"/>
+            </svg>
+            
+            <svg class="floating-leaf leaf-3" width="70" height="70" viewBox="0 0 200 200">
+                <path d="M100,20 Q150,50 160,100 Q150,150 100,180 Q50,150 40,100 Q50,50 100,20" 
+                      fill="#9ccc65" opacity="0.5"/>
+                <path d="M100,20 L100,180" stroke="#7cb342" stroke-width="3" fill="none"/>
+            </svg>
+            
+            <!-- Section Header -->
+            <div class="services-header">
+                <h2 class="services-title">
+                    <span class="title-background">SERVICES FOR YOU</span>
+                </h2>
+                <p class="services-subtitle">Comprehensive solar solutions tailored to meet your energy needs with cutting-edge technology and expert installation</p>
+            </div>
+
+            <!-- Services Slider -->
+            <div class="services-slider-wrapper">
+                <button class="services-nav-btn prev-btn" aria-label="Previous">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <div class="services-slider">
+                    <div class="services-track">
+                        <!-- Service Card 1 -->
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&h=400&fit=crop" alt="Solar Farm Installation">
+                                <div class="service-overlay">
+                                    <span class="service-number">01</span>
+                                </div>
+                            </div>
+                            <div class="service-content">
+                                <h3 class="service-title">Solar Farm Installation</h3>
+                                <p class="service-description">Large-scale solar installations designed to maximize energy production and efficiency for commercial operations</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 2 -->
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=600&h=400&fit=crop" alt="Residential Solar">
+                                <div class="service-overlay">
+                                    <span class="service-number">02</span>
+                                </div>
+                            </div>
+                            <div class="service-content">
+                                <h3 class="service-title">Residential Solar</h3>
+                                <p class="service-description">Custom home solar solutions to reduce electricity bills and achieve energy independence for your family</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 3 -->
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=600&h=400&fit=crop" alt="Commercial Solar">
+                                <div class="service-overlay">
+                                    <span class="service-number">03</span>
+                                </div>
+                            </div>
+                            <div class="service-content">
+                                <h3 class="service-title">Commercial Solar</h3>
+                                <p class="service-description">Business-focused solar systems that lower operational costs and demonstrate corporate sustainability commitment</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 4 -->
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="https://images.unsplash.com/photo-1548337138-e87d889cc369?w=600&h=400&fit=crop" alt="Solar Maintenance">
+                                <div class="service-overlay">
+                                    <span class="service-number">04</span>
+                                </div>
+                            </div>
+                            <div class="service-content">
+                                <h3 class="service-title">Solar Maintenance</h3>
+                                <p class="service-description">Comprehensive maintenance services ensuring optimal performance and longevity of your solar investment</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 5 -->
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=600&h=400&fit=crop" alt="Energy Storage">
+                                <div class="service-overlay">
+                                    <span class="service-number">05</span>
+                                </div>
+                            </div>
+                            <div class="service-content">
+                                <h3 class="service-title">Energy Storage Solutions</h3>
+                                <p class="service-description">Advanced battery storage systems for reliable backup power and maximum energy utilization day and night</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 6 -->
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=400&fit=crop" alt="Solar Consulting">
+                                <div class="service-overlay">
+                                    <span class="service-number">06</span>
+                                </div>
+                            </div>
+                            <div class="service-content">
+                                <h3 class="service-title">Solar Consulting</h3>
+                                <p class="service-description">Expert guidance on system design, financing options, and regulatory compliance for your solar project</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="services-nav-btn next-btn" aria-label="Next">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PM Surya Ghar Yojana Section -->
+    <section class="pm-yojana-section" id="pm-yojana">
+        <div class="pm-yojana-container">
+            <!-- Subsidy Table -->
+            <div class="subsidy-table-wrapper">
+                <h3 class="table-heading">PM SURYA GHAR YOJANA</h3>
+                <p class="yojana-description">
+                    A government initiative to make solar energy accessible and affordable for every household. 
+                    Get subsidies up to ₹78,000 on rooftop solar installations and reduce your electricity bills significantly.
+                </p>
+                <div class="pricing-table-container">
+                    <table class="pricing-table">
+                        <thead>
+                            <tr>
+                                <th class="feature-column">CAPACITY</th>
+                                <th class="plan-column plan-1">
+                                    <div class="plan-header">
+                                        <div class="plan-price">1 kW</div>
+                                    </div>
+                                </th>
+                                <th class="plan-column plan-2">
+                                    <div class="plan-header">
+                                        <div class="plan-price">2 kW</div>
+                                    </div>
+                                </th>
+                                <th class="plan-column plan-3 featured">
+                                    <div class="plan-header">
+                                        <div class="plan-price">3 kW</div>
+                                    </div>
+                                </th>
+                                <th class="plan-column plan-4">
+                                    <div class="plan-header">
+                                        <div class="plan-price">5 kW</div>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="feature-name">Total Cost</td>
+                                <td>₹60,000</td>
+                                <td>₹1,20,000</td>
+                                <td class="featured-col">₹1,80,000</td>
+                                <td>₹3,00,000</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Govt Subsidy</td>
+                                <td>₹30,000</td>
+                                <td>₹60,000</td>
+                                <td class="featured-col">₹78,000</td>
+                                <td>₹78,000</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Net Cost</td>
+                                <td><strong>₹30,000</strong></td>
+                                <td><strong>₹60,000</strong></td>
+                                <td class="featured-col"><strong>₹1,02,000</strong></td>
+                                <td><strong>₹2,22,000</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Monthly Savings</td>
+                                <td>₹1,500</td>
+                                <td>₹3,000</td>
+                                <td class="featured-col">₹4,500</td>
+                                <td>₹7,500</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Annual Savings</td>
+                                <td>₹18,000</td>
+                                <td>₹36,000</td>
+                                <td class="featured-col">₹54,000</td>
+                                <td>₹90,000</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Payback Period</td>
+                                <td>~1.7 Years</td>
+                                <td>~1.7 Years</td>
+                                <td class="featured-col">~1.9 Years</td>
+                                <td>~2.5 Years</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Our Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="projects-container">
+            <!-- Section Label -->
+            <div class="projects-label">OUR PROJECTS</div>
+            
+            <!-- Section Title -->
+            <h2 class="projects-title">Powering Progress,<br>Energizing India</h2>
+            
+            <div class="projects-content">
+                <!-- India Map -->
+                <div class="india-map">
+                    <img src="../images/vecteezy_doodle-freehand-drawing-of-india-map_12806697.png" alt="India Map" class="map-image">
+                    
+                    <!-- State Markers -->
+                    <div class="map-marker" style="top: 15%; left: 25%;" data-state="rajasthan"></div>
+                    <div class="map-marker" style="top: 20%; left: 40%;" data-state="uttar-pradesh"></div>
+                    <div class="map-marker" style="top: 35%; left: 18%;" data-state="gujarat"></div>
+                    <div class="map-marker" style="top: 40%; left: 32%;" data-state="madhya-pradesh"></div>
+                    <div class="map-marker" style="top: 28%; left: 35%;" data-state="haryana"></div>
+                    <div class="map-marker" style="top: 35%; left: 55%;" data-state="bihar"></div>
+                    <div class="map-marker" style="top: 55%; left: 38%;" data-state="maharashtra"></div>
+                    <div class="map-marker" style="top: 65%; left: 35%;" data-state="karnataka"></div>
+                    <div class="map-marker" style="top: 75%; left: 40%;" data-state="tamil-nadu"></div>
+                </div>
+                
+                <!-- Projects Stats -->
+                <div class="projects-stats">
+                    <!-- State Project 1 -->
+                    <div class="state-project">
+                        <div class="state-color" style="background: #8bc34a;"></div>
+                        <div class="state-info">
+                            <h3 class="state-name">Rajasthan</h3>
+                            <p class="state-capacity">2116 MWp Commissioned</p>
+                            <p class="state-implementation">1950 MWp Under Implementation</p>
+                        </div>
+                    </div>
+                    
+                    <!-- State Project 2 -->
+                    <div class="state-project">
+                        <div class="state-color" style="background: #ff9800;"></div>
+                        <div class="state-info">
+                            <h3 class="state-name">Maharashtra</h3>
+                            <p class="state-capacity">1013 MWp Commissioned</p>
+                            <p class="state-implementation">1426 MWp Under Implementation</p>
+                        </div>
+                    </div>
+                    
+                    <!-- State Project 3 -->
+                    <div class="state-project">
+                        <div class="state-color" style="background: #e91e63;"></div>
+                        <div class="state-info">
+                            <h3 class="state-name">Gujarat</h3>
+                            <p class="state-capacity">820 MWp Commissioned</p>
+                            <p class="state-implementation">1370 MWp Under Implementation</p>
+                        </div>
+                    </div>
+                    
+                    <!-- State Project 4 -->
+                    <div class="state-project">
+                        <div class="state-color" style="background: #9c27b0;"></div>
+                        <div class="state-info">
+                            <h3 class="state-name">Karnataka</h3>
+                            <p class="state-capacity">792.56 MWp Commissioned</p>
+                        </div>
+                    </div>
+                    
+                    <!-- State Project 5 -->
+                    <div class="state-project">
+                        <div class="state-color" style="background: #3f51b5;"></div>
+                        <div class="state-info">
+                            <h3 class="state-name">Bihar</h3>
+                            <p class="state-capacity">71.75 MWp Commissioned</p>
+                        </div>
+                    </div>
+                    
+                    <!-- State Project 6 -->
+                    <div class="state-project">
+                        <div class="state-color" style="background: #ff9800;"></div>
+                        <div class="state-info">
+                            <h3 class="state-name">Uttar Pradesh</h3>
+                            <p class="state-capacity">169 MWp Commissioned</p>
+                        </div>
+                    </div>
+                    
+                    <!-- State Project 7 -->
+                    <div class="state-project">
+                        <div class="state-color" style="background: #8bc34a;"></div>
+                        <div class="state-info">
+                            <h3 class="state-name">Haryana</h3>
+                            <p class="state-capacity">50 MWp Commissioned</p>
+                        </div>
+                    </div>
+                    
+                    <!-- State Project 8 -->
+                    <div class="state-project">
+                        <div class="state-color" style="background: #e91e63;"></div>
+                        <div class="state-info">
+                            <h3 class="state-name">Tamil Nadu</h3>
+                            <p class="state-capacity">65 MWp Commissioned</p>
+                        </div>
+                    </div>
+                    
+                    <!-- State Project 9 -->
+                    <div class="state-project">
+                        <div class="state-color" style="background: #00bcd4;"></div>
+                        <div class="state-info">
+                            <h3 class="state-name">Madhya Pradesh</h3>
+                            <p class="state-capacity">279 MWp Commissioned</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Life at Company Section -->
+    <section class="life-section">
+        <div class="life-container">
+            <div class="life-header">
+                <p class="life-subtitle">JOIN OUR TEAM</p>
+                <h2 class="life-title">Life at OnSunPay Solar</h2>
+                <p class="life-description">OnSunPay Solar thrives on "Promise" and "Values" uniting for sustainable infrastructure to nurture Mother Earth</p>
+            </div>
+
+            <div class="life-cards">
+                <div class="life-card">
+                    <div class="life-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                            <path d="M2 12h20"></path>
+                        </svg>
+                    </div>
+                    <h3 class="life-card-title">Global Energy Transition Ambition</h3>
+                    <p class="life-card-text">Join OnSunPay Solar in the collective pursuit of a global energy transition shaping the future of humanity.</p>
+                </div>
+
+                <div class="life-card">
+                    <div class="life-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="life-card-title">Work-Life Harmony Initiative</h3>
+                    <p class="life-card-text">At OnSunPay Solar, we prioritize & safeguard the work / life balance of our employees, fostering a harmonious & fulfilling professional journey.</p>
+                </div>
+
+                <div class="life-card">
+                    <div class="life-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="life-card-title">OnSunPay Solar: Your Second Home</h3>
+                    <p class="life-card-text">Experience a workplace where your hard work and dedication are valued. With the support of our managers and HR team, OnSunPay Solar strives to make your professional environment a second home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer Top -->
+            <div class="footer-top">
+                <!-- Company Info -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h2>ONSUNPLAY SOLAR</h2>
+                        <p class="footer-tagline">Powering Your Future</p>
+                    </div>
+                    <p class="footer-description">
+                        Leading provider of sustainable solar energy solutions, committed to creating a cleaner, greener future for India.
+                    </p>
+                    <!-- Social Media Links -->
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/onsunpaysolar/" target="_blank" class="social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61584329696559" target="_blank" class="social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#pm-yojana">PM Surya Ghar</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-column">
+                    <h3 class="footer-heading">Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Solar Farm Installation</a></li>
+                        <li><a href="#services">Residential Solar</a></li>
+                        <li><a href="#services">Commercial Solar</a></li>
+                        <li><a href="#services">Solar Maintenance</a></li>
+                        <li><a href="#services">Energy Storage</a></li>
+                        <li><a href="#services">Solar Consulting</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Main Road, Butibori,<br>Nagpur-441108</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>9175845833<br>9423603052</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <a href="mailto:onsunpaysolar@gmail.com">onsunpaysolar@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">
+                        &copy; 2025 Onsunplay Solar. All Rights Reserved.
+                    </p>
+                    <div class="footer-bottom-links">
+                        <a href="#privacy">Privacy Policy</a>
+                        <span class="separator">|</span>
+                        <a href="#terms">Terms & Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919175845833?text=Hi%2C%20I%20want%20to%20know%20more%20about%20solar%20installation" 
+       target="_blank" 
+       class="whatsapp-float" 
+       aria-label="Chat on WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="whatsapp-tooltip">Chat with us!</span>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"/>
+        </svg>
+    </button>
+    
+    <script src="../js/script.js"></script>
 </body>
 </html>
