@@ -220,9 +220,14 @@ body {
    =================================== */
 .hero-section {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
+    min-height: 100dvh; /* Dynamic viewport height for mobile browsers */
     width: 100%;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px; /* Account for fixed navbar */
 }
 
 /* Hero Image Slider */
@@ -279,26 +284,25 @@ body {
 
 /* Hero Content */
 .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     text-align: center;
     color: var(--white);
     z-index: 3;
     max-width: 1000px;
-    padding: 0 2rem;
+    width: 100%;
+    padding: 2rem 2rem 6rem;
+    margin: auto;
     animation: fadeInUp 1s ease-out;
 }
 
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translate(-50%, -40%);
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
-        transform: translate(-50%, -50%);
+        transform: translateY(0);
     }
 }
 
@@ -328,6 +332,8 @@ body {
     gap: 1.5rem;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
 }
 
 .btn {
@@ -368,12 +374,13 @@ body {
 /* Slider Navigation Dots */
 .slider-dots {
     position: absolute;
-    bottom: 40px;
+    bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     gap: 15px;
     z-index: 4;
+    padding: 1rem;
 }
 
 .dot {
@@ -493,7 +500,7 @@ body {
     }
     
     .hero-content {
-        padding: 0 1.5rem;
+        padding: 6rem 1.5rem 4rem;
     }
     
     .hero-title {
@@ -550,7 +557,7 @@ body {
     }
     
     .hero-content {
-        padding: 0 1rem;
+        padding: 5rem 1rem 3rem;
     }
     
     .hero-title {
@@ -622,11 +629,7 @@ body {
     }
     
     .hero-content {
-        padding: 8rem 2rem 6rem;
-        position: relative;
-        top: auto;
-        left: auto;
-        transform: none;
+        padding: 7rem 2rem 5rem;
     }
     
     .hero-title {
@@ -3341,3 +3344,41 @@ body {
     }
 }
 
+/* ===================================
+   HIGH-DPI & ZOOM COMPATIBILITY
+   =================================== */
+@media screen and (min-resolution: 1.25dppx) {
+    /* Windows 125% scaling and above */
+    .hero-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .hero-content {
+        padding-top: 1rem;
+        padding-bottom: 5rem;
+    }
+    
+    .slider-dots {
+        bottom: 3rem;
+    }
+}
+
+@media screen and (min-resolution: 1.5dppx) {
+    /* Windows 150% scaling and above */
+    .hero-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    
+    .hero-content {
+        padding-bottom: 6rem;
+    }
+}
+
+/* Ensure proper spacing on all OS */
+@supports (min-height: 100dvh) {
+    .hero-section {
+        min-height: 100dvh;
+    }
+}
