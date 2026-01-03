@@ -2649,6 +2649,61 @@ body {
     color: #555555;
 }
 
+/* Footer Credit - Nexal Solution */
+.footer-credit {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.onsunpay-logo {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nexal-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.nexal-link:hover {
+    background: rgba(139, 195, 74, 0.1);
+    transform: translateY(-2px);
+}
+
+.nexal-logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0.9);
+    transition: all 0.3s ease;
+}
+
+.nexal-link:hover .nexal-logo {
+    filter: brightness(1);
+}
+
+.nexal-text {
+    font-size: 0.95rem;
+    color: #999999;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nexal-link:hover .nexal-text {
+    color: var(--primary-green);
+}
+
 /* ===================================
    RESPONSIVE - FOOTER
    =================================== */
@@ -2677,6 +2732,24 @@ body {
     .footer-bottom-content {
         flex-direction: column;
         text-align: center;
+    }
+    
+    .footer-credit {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .onsunpay-logo {
+        height: 40px;
+    }
+    
+    .nexal-link {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .nexal-logo {
+        height: 35px;
     }
 }
 
