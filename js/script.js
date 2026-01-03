@@ -43,34 +43,35 @@ accordionHeaders.forEach(header => {
 
 function scrollGallery(direction) {
   const gallery = document.getElementById("galleryScroll");
-  const scrollAmount = 380;
+  const column = gallery.querySelector(".gallery-column");
+
+  if (!column) return;
+
+  const columnWidth = column.offsetWidth + 24;
+
   gallery.scrollBy({
-    left: direction * scrollAmount,
+    left: direction * columnWidth,
     behavior: "smooth"
   });
 }
 
-
+/* ---------- LIGHTBOX ---------- */
 const lightbox = document.getElementById("imageLightbox");
 const lightboxImg = document.getElementById("lightboxImg");
-const closeBtn = document.querySelector(".lightbox-close");
 
-// Open image on image click
-document.querySelectorAll(".gallery-scroll img").forEach(img => {
+document.querySelectorAll(".gallery-column img").forEach(img => {
   img.addEventListener("click", () => {
     lightbox.classList.add("show");
     lightboxImg.src = img.src;
   });
 });
 
-// Close on click
 lightbox.addEventListener("click", (e) => {
   if (e.target !== lightboxImg) {
     lightbox.classList.remove("show");
   }
 });
 
-// Close on ESC key
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     lightbox.classList.remove("show");
