@@ -150,46 +150,47 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===================================
     // STATS COUNTER ANIMATION
     // ===================================
-    
+
     const statNumbers = document.querySelectorAll('.stat-number');
-    let statsAnimated = false;
-    
-    function animateStats() {
-        statNumbers.forEach(stat => {
-            const target = parseInt(stat.getAttribute('data-target'));
-            const duration = 2000;
-            const increment = target / (duration / 16);
-            let current = 0;
-            
-            const updateCounter = () => {
-                current += increment;
-                if (current < target) {
-                    stat.textContent = Math.floor(current);
-                    requestAnimationFrame(updateCounter);
-                } else {
-                    stat.textContent = target;
-                }
-            };
-            
-            updateCounter();
+let statsAnimated = false;
+
+function animateStats() {
+    statNumbers.forEach(stat => {
+        const target = Math.round(parseFloat(stat.getAttribute('data-target')) * 10); // 1.5 → 15
+        const duration = 2000;
+        const increment = Math.ceil(target / (duration / 16));
+        let current = 0;
+
+        const updateCounter = () => {
+            current += increment;
+
+            if (current < target) {
+                stat.textContent = (current / 10).toFixed(1);
+                requestAnimationFrame(updateCounter);
+            } else {
+                stat.textContent = (target / 10).toFixed(1);
+            }
+        };
+
+        updateCounter();
+    });
+}
+
+const statsSection = document.querySelector('.stats-section');
+
+if (statsSection) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !statsAnimated) {
+                statsAnimated = true;
+                animateStats();
+            }
         });
-    }
-    
-    const statsSection = document.querySelector('.stats-section');
-    
-    if (statsSection) {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && !statsAnimated) {
-                    statsAnimated = true;
-                    animateStats();
-                }
-            });
-        }, { threshold: 0.5 });
-        
-        observer.observe(statsSection);
-    }
-    
+    }, { threshold: 0.5 });
+
+    observer.observe(statsSection);
+}
+
     
     // ===================================
     // SERVICES SLIDER WITH AUTO-SCROLL
