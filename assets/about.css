@@ -124,12 +124,13 @@ nav a:hover::after {
 
 .osp-partners-section {
   background-color: #ffffff;
-  padding: 80px 20px;
+  padding: 60px 20px 40px 20px;
 }
 
 .osp-partners-container {
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .osp-partners-title {
@@ -143,19 +144,18 @@ nav a:hover::after {
   width: 130px;
   height: 4px;
   background-color: #7ac943;
-  margin-bottom: 45px;
+  margin: 0 auto 45px auto;
 }
 
 .osp-partners-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 32px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
 .osp-partner-card {
-  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,25 +166,49 @@ nav a:hover::after {
   transform: scale(1.05);
 }
 
-.osp-partner-card img {
-  max-width: 160px;
+/* New circle around logos */
+.osp-logo-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.osp-logo-circle:hover {
+  transform: scale(1.1);
+  border-color: #7ac943;
+}
+
+.osp-logo-circle img {
+  max-width: 80px;
   max-height: 80px;
   object-fit: contain;
-  transition: filter 0.3s ease, transform 0.3s ease;
 }
-@media (max-width: 640px) {
-  .osp-partners-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
+@media (max-width: 640px) {
   .osp-partners-title {
     font-size: 28px;
   }
-
-  .osp-partner-card img {
-    max-width: 120px;
+  .osp-partners-grid {
+    gap: 30px;
+  }
+  .osp-logo-circle {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+  }
+  .osp-logo-circle img {
+    max-width: 50px;
+    max-height: 50px;
   }
 }
+
+
 
 
 .promise-section {
