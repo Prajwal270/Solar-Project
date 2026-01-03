@@ -1,6 +1,14 @@
+// ===================================
+// MOBILE MENU TOGGLE
+// ===================================
+
 function toggleMenu() {
     document.getElementById("nav-links").classList.toggle("show");
 }
+
+// ===================================
+// ACCORDION FUNCTIONALITY
+// ===================================
 
 const accordionHeaders = document.querySelectorAll(".accordion-header");
 
