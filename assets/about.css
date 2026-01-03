@@ -122,6 +122,71 @@ nav a:hover::after {
   font-size: 20px;
 }
 
+.osp-partners-section {
+  background-color: #ffffff;
+  padding: 80px 20px;
+}
+
+.osp-partners-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.osp-partners-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #0b1f3a;
+  margin-bottom: 10px;
+}
+
+.osp-partners-underline {
+  width: 130px;
+  height: 4px;
+  background-color: #7ac943;
+  margin-bottom: 45px;
+}
+
+.osp-partners-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 32px;
+  align-items: center;
+  justify-items: center;
+}
+
+.osp-partner-card {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.osp-partner-card:hover {
+  transform: scale(1.05);
+}
+
+.osp-partner-card img {
+  max-width: 160px;
+  max-height: 80px;
+  object-fit: contain;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+@media (max-width: 640px) {
+  .osp-partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .osp-partners-title {
+    font-size: 28px;
+  }
+
+  .osp-partner-card img {
+    max-width: 120px;
+  }
+}
+
+
 .promise-section {
   padding: 40px 5%;
   position: relative;
