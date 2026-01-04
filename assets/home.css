@@ -31,6 +31,13 @@ body {
     overflow-x: hidden;
 }
 
+/* Global Image Safety - Prevent Overflow */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* ===================================
    NAVIGATION BAR
    =================================== */
@@ -3453,5 +3460,46 @@ body {
 @supports (min-height: 100dvh) {
     .hero-section {
         min-height: 100dvh;
+    }
+}
+
+/* ===================================
+   EXTRA SMALL DEVICES (320px)
+   =================================== */
+@media (max-width: 320px) {
+    .nav-container,
+    .about-container,
+    .stats-container,
+    .services-container,
+    .footer-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .hero-content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .hero-title {
+        font-size: 1.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.8rem;
+    }
+    
+    .btn {
+        font-size: 0.8rem;
+        padding: 0.7rem 1.2rem;
+        max-width: 100%;
+    }
+    
+    .service-card {
+        min-width: 100%;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
     }
 }
