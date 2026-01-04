@@ -122,6 +122,95 @@ nav a:hover::after {
   font-size: 20px;
 }
 
+.osp-partners-section {
+  background-color: #ffffff;
+  padding: 60px 20px 40px 20px;
+}
+
+.osp-partners-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.osp-partners-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #0b1f3a;
+  margin-bottom: 10px;
+}
+
+.osp-partners-underline {
+  width: 130px;
+  height: 4px;
+  background-color: #7ac943;
+  margin: 0 auto 45px auto;
+}
+
+.osp-partners-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.osp-partner-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.osp-partner-card:hover {
+  transform: scale(1.05);
+}
+
+/* New circle around logos */
+.osp-logo-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.osp-logo-circle:hover {
+  transform: scale(1.1);
+  border-color: #7ac943;
+}
+
+.osp-logo-circle img {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+@media (max-width: 640px) {
+  .osp-partners-title {
+    font-size: 28px;
+  }
+  .osp-partners-grid {
+    gap: 30px;
+  }
+  .osp-logo-circle {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+  }
+  .osp-logo-circle img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
+
+
+
+
 .promise-section {
   padding: 40px 5%;
   position: relative;
