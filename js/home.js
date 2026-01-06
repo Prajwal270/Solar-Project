@@ -112,44 +112,46 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===================================
 
     const statNumbers = document.querySelectorAll('.stat-number');
-let statsAnimated = false;
+    let statsAnimated = false;
 
-function animateStats() {
-    statNumbers.forEach(stat => {
-        const target = Math.round(parseFloat(stat.getAttribute('data-target')) * 10); // 1.5 → 15
-        const duration = 2000;
-        const increment = Math.ceil(target / (duration / 16));
-        let current = 0;
+    function animateStats() {
+        statNumbers.forEach(stat => {
+            const target = parseFloat(stat.getAttribute('data-target'));
+            const hasDecimals = stat.hasAttribute('data-decimals');
+            const decimals = hasDecimals ? parseInt(stat.getAttribute('data-decimals')) : 0;
+            const duration = 2000;
+            const increment = target / (duration / 16);
+            let current = 0;
 
-        const updateCounter = () => {
-            current += increment;
+            const updateCounter = () => {
+                current += increment;
 
-            if (current < target) {
-                stat.textContent = (current / 10).toFixed(1);
-                requestAnimationFrame(updateCounter);
-            } else {
-                stat.textContent = (target / 10).toFixed(1);
-            }
-        };
+                if (current < target) {
+                    stat.textContent = hasDecimals ? current.toFixed(decimals) : Math.floor(current);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    stat.textContent = hasDecimals ? target.toFixed(decimals) : Math.floor(target);
+                }
+            };
 
-        updateCounter();
-    });
-}
-
-const statsSection = document.querySelector('.stats-section');
-
-if (statsSection) {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && !statsAnimated) {
-                statsAnimated = true;
-                animateStats();
-            }
+            updateCounter();
         });
-    }, { threshold: 0.5 });
+    }
 
-    observer.observe(statsSection);
-}
+    const statsSection = document.querySelector('.stats-section');
+
+    if (statsSection) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !statsAnimated) {
+                    statsAnimated = true;
+                    animateStats();
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(statsSection);
+    }
 
     
     // ===================================
